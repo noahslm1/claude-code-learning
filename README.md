@@ -16,6 +16,14 @@ python manual_test.py
 
 You'll be prompted to enter a name and an age interactively.
 
+## Example
+
+```
+What is your name? Jollo
+What is your age? 30
+Hello Jollo, you are 30 years old. Welcome to Claude Code!
+```
+
 ## Running the tests
 
 ```
