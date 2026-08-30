@@ -6,7 +6,7 @@ def main():
         age = int(age_input)
         if age <= 0:
             raise ValueError
-        print(f"Hello {name}, you are {age} years old. Welcome to Claude Code!")
+        print(f"Hello {name}, you are {age} years old. Welcome to Claude Code! Have a great day!")
     except ValueError:
         print(f"Sorry {name}, '{age_input}' is not a valid age.")
 
