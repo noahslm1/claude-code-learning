@@ -1,6 +1,10 @@
 def main():
-    name = input("What is your name? ")
-    age_input = input("What is your age? ")
+    try:
+        name = input("What is your name? ")
+        age_input = input("What is your age? ")
+    except EOFError:
+        print("No input received.")
+        return
 
     try:
         age = int(age_input)

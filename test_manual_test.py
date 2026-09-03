@@ -24,3 +24,14 @@ def test_manual_test_output(name, age, expected):
     )
     assert result.returncode == 0
     assert expected in result.stdout
+
+
+def test_manual_test_handles_eof_gracefully():
+    result = subprocess.run(
+        [sys.executable, "manual_test.py"],
+        input="Jollo\n",
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode == 0
+    assert "No input received." in result.stdout
